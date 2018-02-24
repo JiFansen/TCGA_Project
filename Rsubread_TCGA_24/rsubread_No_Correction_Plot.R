@@ -3,7 +3,7 @@ library(SIMLR)
 library(igraph)
 library(ggplot2)
 ##################################### Using All the Genes. ###########################################################
-data.rsubread24 <- read.table(file="GSM1536837_06_01_15_TCGA_24.tumor_Rsubread_FPKM.txt",header=T,sep="\t",rownames=1)
+data.rsubread24 <- read.table(file="GSM1536837_06_01_15_TCGA_24.tumor_Rsubread_FPKM.txt",header=T,sep="\t",row.names=1)
 data.no.small <- data.rsubread24[which(rowSums(data.rsubread24<1)!=dim(data.rsubread24)[2]),]
 data.no.small <- log2(data.no.small+1)
 data.no.small <- as.matrix(data.no.small)
