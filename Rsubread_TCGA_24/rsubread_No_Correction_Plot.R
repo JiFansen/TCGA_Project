@@ -120,7 +120,7 @@ colnames(dataset) <- c("component1","component2","cancertype")
 png(file="Tumor_715_All_Gene.png",width=300, height=100, units='mm',res=1500)
 ggplot(dataset,aes(x=component1,y=component2,col=cancertype))+geom_point()+labs(title="Tumor_715_All_Gene")+theme(plot.title=element_text(hjust=0.5))
 dev.off()
-######################################## Jing Zhe's test. All Genes. #########################################################
+######################################## Jing Zhe's test. xCell Genes. #########################################################
 data.no.small <- data.715[which(rowSums(data.715<1)!=dim(data.715)[2]),]
 data.no.small <- log2(data.no.small+1)
 data.no.small <- as.matrix(data.no.small)
@@ -143,9 +143,12 @@ for(i in 1:16){
   data.between <- t(scale(t(data.between),center = TRUE, scale = TRUE))
   data.no.small[,samples.Name] <- data.between
 }
+xCellScore <- read.table(file="xCellScore",header=T,sep="\t")
+size <- as.numeric(xCellScore[65,])
 example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
 dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype))
 colnames(dataset) <- c("component1","component2","cancertype")
-png(file="Tumor_715_xCell_Gene.png",width=300, height=100, units='mm',res=1500)
-ggplot(dataset,aes(x=component1,y=component2,col=cancertype))+geom_point()+labs(title="Tumor_715_xCell_Gene")+theme(plot.title=element_text(hjust=0.5))
+png(file="Tumor_715_xCell_Gene.png",width=200, height=200, units='mm',res=1600)
+p <- ggplot(dataset,aes(x=component1,y=component2,col=cancertype,size=size))
+p+geom_point()+labs(title="Tumor_715_xCell_Gene")+theme(plot.title=element_text(hjust=0.5))
 dev.off()
