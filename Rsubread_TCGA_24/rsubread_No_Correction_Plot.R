@@ -24,7 +24,7 @@ for(i in 1:length(cancername)){
 example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
 dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype[,2]))
 colnames(dataset) <- c("component1","component2","cancertype")
-png(file="Rsubread_No_Correction_Plot_All_Gene.png",width=300, height=100, units='mm',res=1500)
+png(file="Rsubread_No_Correction_Plot_All_Gene.png",width=200, height=200, units='mm',res=1600)
 ggplot(dataset,aes(x=component1,y=component2,col=cancertype))+geom_point()+labs(title="Rsubread_No_Correction_Plot_All_Gene.png")+theme(plot.title=element_text(hjust=0.5))
 dev.off()
 
@@ -56,7 +56,7 @@ for(i in 1:length(cancername)){
 example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
 dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype[,2]))
 colnames(dataset) <- c("component1","component2","cancertype")
-png(file="Rsubread_No_Correction_Plot_xCell_Gene_1.png",width=300, height=100, units='mm',res=1500)
+png(file="Rsubread_No_Correction_Plot_xCell_Gene_1.png",width=200, height=200, units='mm',res=1600)
 ggplot(dataset,aes(x=component1,y=component2,col=cancertype))+geom_point()+labs(title="Rsubread_No_Correction_Plot_xCell_Gene_1.png")+theme(plot.title=element_text(hjust=0.5))
 dev.off()
 
@@ -87,7 +87,7 @@ for(i in 1:length(cancername)){
 example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
 dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype[,2]))
 colnames(dataset) <- c("component1","component2","cancertype")
-png(file="Rsubread_No_Correction_Plot_xCell_Gene_1.png",width=300, height=100, units='mm',res=1500)
+png(file="Rsubread_No_Correction_Plot_xCell_Gene_1.png",width=200, height=200, units='mm',res=1600)
 ggplot(dataset,aes(x=component1,y=component2,col=cancertype))+geom_point()+labs(title="Rsubread_No_Correction_Plot_xCell_Gene_1.png")+theme(plot.title=element_text(hjust=0.5))
 dev.off()
 
@@ -117,7 +117,7 @@ for(i in 1:16){
 example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
 dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype))
 colnames(dataset) <- c("component1","component2","cancertype")
-png(file="Tumor_715_All_Gene.png",width=300, height=100, units='mm',res=1500)
+png(file="Tumor_715_All_Gene.png",width=200, height=200, units='mm',res=1600)
 ggplot(dataset,aes(x=component1,y=component2,col=cancertype))+geom_point()+labs(title="Tumor_715_All_Gene")+theme(plot.title=element_text(hjust=0.5))
 dev.off()
 ######################################## Jing Zhe's test. xCell Genes. #########################################################
