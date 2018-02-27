@@ -1,16 +1,18 @@
 library('preprocessCore')
-library(SIMLR)
-library(igraph)
-library(ggplot2)
-############################## Using the xCell Genelists. ###########################################################
-############################## First, qq normalization, then xcellGene extraction.####################################
+library("SIMLR")
+library("igraph")
+library("ggplot2")
+library("Rtsne")
+library("ggpubr")
 data.rsubread24 <- read.table(file="GSM1536837_06_01_15_TCGA_24.tumor_Rsubread_FPKM.txt",header=T,sep="\t",row.names=1)
+############################################## xCell Genes or any other genelists. ################################################################
 data.no.small <- data.rsubread24[which(rowSums(data.rsubread24<1)!=dim(data.rsubread24)[2]),]
 data.no.small <- log2(data.no.small+1)
 data.no.small <- as.matrix(data.no.small)
 sampleName <- colnames(data.no.small)
 genename <- rownames(data.no.small)
-xCellGene <- read.table(file="xCellGeneList",header=T,sep="\t")
+#xCellGene <- read.table(file="xCellGeneList",header=T,sep="\t")
+xCellGene <- read.table(file="AntigenProcessing_KEGG.txt",header=T,sep="\t")
 xCellGene <- as.character(xCellGene[,1])
 xcellGeneList <- intersect(xCellGene,genename)
 xcell.index <- which(is.na(match(genename,xcellGeneList))==FALSE)
@@ -27,20 +29,36 @@ for(i in 1:length(cancername)){
   data.between <- t(scale(t(data.between),center = TRUE, scale = TRUE))
   data.no.small[,samples.Name] <- data.between
 }
+############################################################################################################################
 xCellScore <- read.table(file="xCellScore.txt",header=T,sep="\t")
-size_65 <- as.numeric(xCellScore[65,])
-size_67 <- as.numeric(xCellScore[67,])
-example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
-dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype[,2]))
-colnames(dataset) <- c("component1","component2","cancertype")
-example_large_scale = SIMLR_Large_Scale(X = xCellScore[1:66,], c = 8, kk = 10)
-dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype[,2]))
-colnames(dataset) <- c("component1","component2","cancertype")
-png(file="xCellResults.png",width=200, height=200, units='mm',res=1600)
-p <- ggplot(dataset,aes(x=component1,y=component2,col=cancertype))
-p+geom_point()+labs(title="xCellResults")+theme(plot.title=element_text(hjust=0.5))
-dev.off()
 
+tsne <- Rtsne(t(data.no.small), dims = 2, perplexity=8, verbose=TRUE, max_iter = 500)
+data.pca <- t(data.no.small)
+data.pr <- prcomp(data.pca)
+example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
+
+setwd("/Share/home/lanxun5/Data/TCGA/FPKM_9000/Rsubread_TCGA_24/")
+for(i in 1:dim(xCellScore)[1]){
+  setwd("/Share/home/lanxun5/Data/TCGA/FPKM_9000/Rsubread_TCGA_24/point_cell_type_score_antigen")
+  dataset.tsne <- data.frame(tsne$Y,cancertype=as.character(cancertype[,2]),score = as.numeric(xCellScore[i,]))
+  colnames(dataset.tsne) <- c("component1","component2","cancertype","score")
+  dataSet <- data.pr$x[,1:2]
+  dataSet <- data.frame(dataSet,cancertype=cancertype[,2],score = as.numeric(xCellScore[i,]))
+  dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype[,2]),score = as.numeric(xCellScore[i,]))
+  colnames(dataset) <- c("component1","component2","cancertype","score")
+  p.tsne <- ggplot(dataset.tsne,aes(x=component1,y=component2,col=cancertype,size=score))
+  p.tsne <- p.tsne+geom_point()+labs(title="tsne")+theme(plot.title=element_text(hjust=0.5))
+  p.tsne <- p.tsne+scale_size(range=c(0,2))+theme(legend.position="none")
+  p.simlr <- ggplot(dataset,aes(x=component1,y=component2,col=cancertype,size=score))
+  p.simlr <- p.simlr+geom_point()+labs(title="simlr")+theme(plot.title=element_text(hjust=0.5))
+  p.simlr <- p.simlr+scale_size(range=c(0,2))+theme(legend.position="none")
+  p.pca <- ggplot(dataSet,aes(x=PC1,y=PC2,col=cancertype,size=score))
+  p.pca <- p.pca+geom_point()+labs(title="pca")+theme(plot.title=element_text(hjust=0.5))+scale_size(range=c(0,2))
+  picture.name <- paste("xCellScore_",rownames(xCellScore)[i],".png",sep="")
+  png(file=picture.name,width=200, height=200, units='mm',res=1600)
+  ggarrange(p.tsne, p.pca, p.simlr,ncol=3,nrow=1,labels=c("A","B","C"))
+  dev.off()
+}
 ##########################  Label the samples using each of the 67 scores. #####################################
 setwd("/Share/home/lanxun5/Data/TCGA/FPKM_9000/Rsubread_TCGA_24/")
 example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
@@ -52,21 +70,6 @@ for(i in 1:dim(xCellScore)[1]){
   png(file=picture.name,width=200, height=200, units='mm',res=1600)
   size <- as.numeric(xCellScore[i,])
   p <- ggplot(dataset,aes(x=component1,y=component2,col=cancertype,size=size))
-  p <- p+geom_point()+labs(title=picture.name)+theme(plot.title=element_text(hjust=0.5))+scale_size(range=c(0,2))
-  print(p)
-  dev.off()
-}
-################################## PCA Plot. ####################################################################
-data.pca <- t(data.no.small)
-data.pr <- prcomp(data.pca)
-dataSet <- data.pr$x[,1:2]
-dataSet <- data.frame(dataSet,cancertype=cancertype[,2])
-for(i in 1:dim(xCellScore)[1]){
-  picture.name <- paste("PCA_xCellScore_",rownames(xCellScore)[i],".png",sep="")
-  setwd("/Share/home/lanxun5/Data/TCGA/FPKM_9000/Rsubread_TCGA_24/point_cell_type_score/PCA")
-  png(file=picture.name,width=200, height=200, units='mm',res=1600)
-  size <- as.numeric(xCellScore[i,])
-  p <- ggplot(dataSet,aes(x=PC1,y=PC2,col=cancertype,size=size))
   p <- p+geom_point()+labs(title=picture.name)+theme(plot.title=element_text(hjust=0.5))+scale_size(range=c(0,2))
   print(p)
   dev.off()
@@ -135,94 +138,13 @@ for(m in 1:length(uniq.cell.type)){
   print(p)
   dev.off()
 }
-##################################### Using All the Genes. ###########################################################
-data.rsubread24 <- read.table(file="GSM1536837_06_01_15_TCGA_24.tumor_Rsubread_FPKM.txt",header=T,sep="\t",row.names=1)
-data.no.small <- data.rsubread24[which(rowSums(data.rsubread24<1)!=dim(data.rsubread24)[2]),]
-data.no.small <- log2(data.no.small+1)
-data.no.small <- as.matrix(data.no.small)
-sampleName <- colnames(data.no.small)
-genename <- rownames(data.no.small)
-data.no.small <- normalize.quantiles(data.no.small,copy=TRUE)
-rownames(data.no.small) <- genename
-colnames(data.no.small) <- sampleName
-cancertype <- read.table(file="cancertype",header=F,sep="\t")
-cancername <- unique(as.character(cancertype[,2]))
-for(i in 1:length(cancername)){
-  cancer <- cancername[i]
-  samples.Name <- which(as.character(cancertype[,2])==cancer)
-  data.between <- data.no.small[,samples.Name]
-  data.between <- t(scale(t(data.between),center = TRUE, scale = TRUE))
-  data.no.small[,samples.Name] <- data.between
-}
-example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
-dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype[,2]))
-colnames(dataset) <- c("component1","component2","cancertype")
-png(file="Rsubread_No_Correction_Plot_All_Gene.png",width=300, height=100, units='mm',res=1500)
-ggplot(dataset,aes(x=component1,y=component2,col=cancertype))+geom_point()+labs(title="Rsubread_No_Correction_Plot_All_Gene.png")+theme(plot.title=element_text(hjust=0.5))
-dev.off()
 
-############################## Using the xCell Genelists. ###########################################################
-############################## After xcellGene extraction, then qq normalization.####################################
-data.no.small <- data.rsubread24[which(rowSums(data.rsubread24<1)!=dim(data.rsubread24)[2]),]
-data.no.small <- log2(data.no.small+1)
-data.no.small <- as.matrix(data.no.small)
-sampleName <- colnames(data.no.small)
-genename <- rownames(data.no.small)
-xCellGene <- read.table(file="xCellGeneList",header=T,sep="\t")
-xCellGene <- as.character(xCellGene[,1])
-xcellGeneList <- intersect(xCellGene,genename)
-xcell.index <- which(is.na(match(genename,xcellGeneList))==FALSE)
-
-data.no.small <- data.no.small[xcell.index,]
-data.no.small <- normalize.quantiles(data.no.small,copy=TRUE)
-rownames(data.no.small) <- xcellGeneList
-colnames(data.no.small) <- sampleName
-cancertype <- read.table(file="cancertype",header=F,sep="\t")
-cancername <- unique(as.character(cancertype[,2]))
-for(i in 1:length(cancername)){
-  cancer <- cancername[i]
-  samples.Name <- which(as.character(cancertype[,2])==cancer)
-  data.between <- data.no.small[,samples.Name]
-  data.between <- t(scale(t(data.between),center = TRUE, scale = TRUE))
-  data.no.small[,samples.Name] <- data.between
-}
-example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
-dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype[,2]))
-colnames(dataset) <- c("component1","component2","cancertype")
-png(file="Rsubread_No_Correction_Plot_xCell_Gene_1.png",width=300, height=100, units='mm',res=1500)
-ggplot(dataset,aes(x=component1,y=component2,col=cancertype))+geom_point()+labs(title="Rsubread_No_Correction_Plot_xCell_Gene_1.png")+theme(plot.title=element_text(hjust=0.5))
-dev.off()
-
-############################################### Jing Zhe's test. All Genes. #####################################################
+######################################## Jing Zhe's test. xCell Genes. #########################################################
 library('preprocessCore')
 library(SIMLR)
 library(igraph)
 library(ggplot2)
 data.715 <- read.table(file="tumor_715.txt",header=T,sep="\t",row.names=1)
-data.no.small <- data.715[which(rowSums(data.715<1)!=dim(data.715)[2]),]
-data.no.small <- log2(data.no.small+1)
-data.no.small <- as.matrix(data.no.small)
-sampleName <- colnames(data.no.small)
-genename <- rownames(data.no.small)
-data.no.small <- normalize.quantiles(data.no.small,copy=TRUE)
-rownames(data.no.small) <- genename
-colnames(data.no.small) <- sampleName
-cancertype <- substr(colnames(data.715),1,4)
-cancername <- unique(as.character(cancertype))
-for(i in 1:16){
-  cancer <- cancername[i]
-  samples.Name <- which(as.character(cancertype)==cancer)
-  data.between <- data.no.small[,samples.Name]
-  data.between <- t(scale(t(data.between),center = TRUE, scale = TRUE))
-  data.no.small[,samples.Name] <- data.between
-}
-example_large_scale = SIMLR_Large_Scale(X = data.no.small, c = 8, kk = 10)
-dataset <- data.frame(example_large_scale$ydata,cancertype=as.character(cancertype))
-colnames(dataset) <- c("component1","component2","cancertype")
-png(file="Tumor_715_All_Gene.png",width=200, height=200, units='mm',res=1600)
-ggplot(dataset,aes(x=component1,y=component2,col=cancertype))+geom_point()+labs(title="Tumor_715_All_Gene")+theme(plot.title=element_text(hjust=0.5))
-dev.off()
-######################################## Jing Zhe's test. xCell Genes. #########################################################
 data.no.small <- data.715[which(rowSums(data.715<1)!=dim(data.715)[2]),]
 data.no.small <- log2(data.no.small+1)
 data.no.small <- as.matrix(data.no.small)
