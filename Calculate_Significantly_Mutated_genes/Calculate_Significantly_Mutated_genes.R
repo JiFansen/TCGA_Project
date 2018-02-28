@@ -130,7 +130,7 @@ for(i in 1:dim(strand.subtract)[1]){
 }
 colnames(strand.subtract)[11] <- "useful.context"
 
-background <- read.table(file="./background_cancer.txt",header=T)
+background <- read.table(file="./final_background.txt",header=T)
 number <- which(colnames(background)==cancertype)
 background <- background[,c(1,2,number)]
 a <- unlist(strsplit(as.character(background[,2]),split="\\."))
