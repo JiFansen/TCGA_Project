@@ -26,3 +26,5 @@ Run the following command:<br>
 
 ⑤ Rsubread_lymphocyte_Correction_Plot.R: 
 	This R script will use the slides data to correct the immune gene expression, then plot the cluster.
+
+`xCellGeneList`, `AntigenProcessing_KEGG.txt`: The different kind of gene sets.
