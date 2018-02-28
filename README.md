@@ -15,5 +15,10 @@ Support_Vector_Regression:
 	In this directory, we will do the support vector regression.
 
 -----------------------------------------------------------------------------
+Spearman_Correlation:
+-----------------
+	In this directory, we will do the spearman correlation.
+
+-----------------------------------------------------------------------------
 =============================================================================
 
