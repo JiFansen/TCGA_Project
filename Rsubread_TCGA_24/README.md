@@ -5,12 +5,12 @@ Rsubread_TCGA_24:
 	In this directory, we will use the Rsubread Data to do the analysis.
 
 -----------------------------------------------------------------------------
-# The DataSet is in this location: 
+### The DataSet is in this location: 
 /Share/home/lanxun5/Data/TCGA/FPKM_9000/Rsubread_TCGA_24<br><br>
 
-Run the following command:
-	1. bash sampleID_2_Cancertype.sh
-	2. run the R scripts.
+Run the following command:<br>
+	1. bash sampleID_2_Cancertype.sh<br>
+	2. run the R scripts.<br>
 	
 ① sample.sh: 
 	This script will extract the samples header i the expression matrix, and then display according to the column. 
@@ -26,4 +26,3 @@ Run the following command:
 
 ⑤ Rsubread_lymphocyte_Correction_Plot.R: 
 	This R script will use the slides data to correct the immune gene expression, then plot the cluster.
-=============================================================================
