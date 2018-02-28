@@ -5,8 +5,8 @@ Rsubread_TCGA_24:
 	In this directory, we will use the Rsubread Data to do the analysis.
 
 -----------------------------------------------------------------------------
-The DataSet is in this location: 
-	/Share/home/lanxun5/Data/TCGA/FPKM_9000/Rsubread_TCGA_24
+# The DataSet is in this location: 
+/Share/home/lanxun5/Data/TCGA/FPKM_9000/Rsubread_TCGA_24<br><br>
 
 Run the following command:
 	1. bash sampleID_2_Cancertype.sh
