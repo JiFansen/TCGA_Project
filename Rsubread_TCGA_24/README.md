@@ -1,3 +1,10 @@
+TCGA_Project
+============
+Rsubread_TCGA_24:
+-----------------
+	In this directory, we will use the Rsubread Data to do the analysis.
+
+-----------------------------------------------------------------------------
 The DataSet is in this location: 
 	/Share/home/lanxun5/Data/TCGA/FPKM_9000/Rsubread_TCGA_24
 
@@ -19,3 +26,4 @@ Run the following command:
 
 ⑤ Rsubread_lymphocyte_Correction_Plot.R: 
 	This R script will use the slides data to correct the immune gene expression, then plot the cluster.
+=============================================================================
