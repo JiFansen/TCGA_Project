@@ -5,6 +5,9 @@ cancername.total <- c("ACC","BLCA","BRCA","CESC","CHOL","COAD","DLBC","HNSC","LA
                       "PCPG","PRAD","READ","SARC","STAD","TGCT","THCA","THYM","UCEC",
                       "UCS","UVM","ESCA","GBM","SKCM")
 data.rsubread24 <- read.table(file="GSM1536837_06_01_15_TCGA_24.tumor_Rsubread_FPKM.txt",header=T,sep="\t",row.names=1)
+xCellScore <- read.table(file="xCellScore.txt",header=T,sep="\t")
+xCellScore <- as.matrix(xCellScore)
+
 cancertype <- read.table(file="cancertype",header=F,sep="\t")
 cancername <- unique(as.character(cancertype[,2]))
 cancertype$sampleBarcode <- substr(as.character(cancertype$V1),1,16)
@@ -18,6 +21,7 @@ rownames(data.no.small) <- genename
 colnames(data.no.small) <- sampleName
 data.final <- data.no.small
 data.subset <- matrix(1,nrow=dim(data.no.small)[1])
+xCellScore.subset <- matrix(1, nrow = dim(xCellScore)[1])
 CancerLabel <- character()
 for(i in match(unique(as.character(cancertype$V2)),cancername.total)){
   
@@ -54,7 +58,9 @@ for(i in match(unique(as.character(cancertype$V2)),cancername.total)){
   common.samples <- intersect(as.character(unique(correction.file$sample)),as.character(cancertype$sampleBarcode))
   
   expression.profile <- data.no.small
+  score.between <- xCellScore
   index <- match(common.samples,as.character(cancertype$sampleBarcode))
+  score.between <- xCellScore[,index]
   expression.profile <- expression.profile[,index]
   for(j in 1:length(common.samples)){
     inter.test <- correction.file[which(correction.file$sample==common.samples[j]),]
@@ -65,8 +71,11 @@ for(i in match(unique(as.character(cancertype$V2)),cancername.total)){
   data.final[,index] <- expression.profile
   data.subset <- cbind(data.subset,expression.profile)
   CancerLabel <- c(CancerLabel,rep(cancername.total[i],length(common.samples)))
+  xCellScore.subset <- cbind(xCellScore.subset,score.between)
 }
 data.subset <- data.subset[,-1]
-write.table(data.final,"data.final.correction",sep = '\t')
+xCellScore.subset <- xCellScore.subset[,-1]
+#write.table(data.final,"data.final.correction",sep = '\t')
 write.table(data.subset,"data.subset",sep = '\t')
 write.table(CancerLabel,"CancerLabel",sep = '\t')
+write.table(xCellScore.subset,"xCellScore.subset",sep = '\t')

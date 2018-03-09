@@ -15,6 +15,7 @@ cancername <- unique(as.character(cancertype[,1]))
 xCellGene <- as.character(xCellGene[,1])
 xcellGeneList <- intersect(xCellGene,genename)
 xcell.index <- which(is.na(match(genename,xcellGeneList))==FALSE)
+data.final <- data.final[xcell.index,]
 for(i in 1:length(cancername)){
   cancer <- cancername[i]
   samples.Name <- which(as.character(cancertype[,1])==cancer)
@@ -22,7 +23,7 @@ for(i in 1:length(cancername)){
   data.between <- t(scale(t(data.between),center = TRUE, scale = TRUE))
   data.final[,samples.Name] <- data.between
 }
-xCellScore <- read.table(file="xCellScore.txt",header=T,sep="\t")
+xCellScore <- read.table(file="xCellScore.subset",header=T,sep="\t")
 tsne <- Rtsne(t(data.final), dims = 2, perplexity=8, verbose=TRUE, max_iter = 500)
 data.pca <- t(data.final)
 data.pr <- prcomp(data.pca)
