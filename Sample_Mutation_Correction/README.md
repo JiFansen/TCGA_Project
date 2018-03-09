@@ -1,23 +1,33 @@
 TCGA_Project
 ============
-Rsubread_TCGA_24:
+1Cal_Mutation_FrameShift_etc.R:
 -----------------
-	In this directory, we will use the Rsubread Data to do the analysis.
+	This script will canculate the frameshift etc mutation accroding to the MAF files.
 
 -----------------------------------------------------------------------------
-Calculate_Significantly_Mutated_genes:
+2Scoring_Every_Possible_codon_for_Significantly_Mutated_gene.R:
 -----------------
-	In this directory, we will calculate the significantly mutated genes.
+	This script will calculate significantly mutated genes.
 
 -----------------------------------------------------------------------------
-Support_Vector_Regression:
+3Scoring_Every_Possible_Gene_For_each_Sample.R:
 -----------------
-	In this directory, we will do the support vector regression.
+	This script will score each sample's mutated gene got in the last step.
 
 -----------------------------------------------------------------------------
-Spearman_Correlation:
+4Sample_Mutation_Correction.R:
 -----------------
-	In this directory, we will do the spearman correlation.
+	This script will correct the expression table.
+
+-----------------------------------------------------------------------------
+5Plot_After_Mutation_Correction.R:
+-----------------
+	This script will plot the corrected expression table.
+
+-----------------------------------------------------------------------------
+`Plot_After_Mutation_Correction.R`, `Sample_Mutation_Correction.R`:
+-----------------
+	These two scripts are uesd for the data downloaded from TCGA.
 
 -----------------------------------------------------------------------------
 =============================================================================
