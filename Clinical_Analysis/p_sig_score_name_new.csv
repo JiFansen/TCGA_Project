@@ -1,0 +1,23 @@
+,score_type,p,
+1,aDC,0.002157247,
+3,Astrocytes,0.005396025,F
+4,Basophils,0.00538257,
+5,B-cells,0.006127373,
+6,CD4+ memory T-cells,0.012025089,
+11,CD8+ naive T-cells,0.01536771,
+15,cDC,0.001772116,
+17,Class-switched memory B-cells,0.039045054,
+18,CLP,2.59E-05,
+20,DC,6.15E-05,
+22,Eosinophils,0.016118443,F
+28,HSC,0.035723847,F
+29,iDC,0.003098199,
+32,Macrophages,0.004847434,
+35,Mast cells,9.28E-05,
+37,Melanocytes,0.018265777,
+40,Mesangial cells,0.029705477,F
+46,naive B-cells,0.003309962,
+47,Neurons,0.000434298,F
+52,pDC,0.000480114,
+63,Th2 cells,0.005496002,
+65,ImmuneScore,0.017715316,

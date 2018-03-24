@@ -1,0 +1,219 @@
+bcr_patient_barcode,days_to_death,days_to_last_followup,drugs-drug-days_to_drug_therapy_end,drugs-drug-days_to_drug_therapy_start,drugs-drug-drug_name,drugs-drug-therapy_types-therapy_type,vital_status,age_at_initial_pathologic_diagnosis,times
+ACC-TCGA-OU-A5PI,Not Applicable,709,239##239##239##239##694##694##694##817##817##878,69##69##55##69##605##605##605##725##725##725,Etoposide##doxorubicin##cisplatin##mitotane##carboplatin##etoposide##doxorubicin##carboplatin##streptozocin##Avastin,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,53,709
+BLCA-TCGA-CF-A47S,Not Applicable,4,317##324,109##109,Bacillus Calmette-Guerin (BCG)##Doxobubicin,Immunotherapy##Chemotherapy,Alive,41,4
+BLCA-TCGA-DK-AA77,Not Applicable,323,Not Available##Not Available,601##601,Ipilimumab##Nivolumab,Immunotherapy##Immunotherapy,Alive,61,323
+BLCA-TCGA-XF-AAMZ,1348,1348,0,0,BCG,Immunotherapy,Dead,81,1348
+BLCA-TCGA-XF-AAN1,941,941,0##0,0##0,BCG##BCG,Immunotherapy##Immunotherapy,Dead,75,941
+BLCA-TCGA-BL-A0C8,Not Applicable,389,722,680,BCG,Immunotherapy,Alive,73,389
+BLCA-TCGA-XF-A9SK,486,486,-368##304##304,Not Available##142##142,"BCG, Intravesicular##Gemzar##Platinol",Immunotherapy##Chemotherapy##Chemotherapy,Dead,65,486
+BLCA-TCGA-XF-A9SV,388,388,0##208##208##342,0##174##174##258,BCG##gemcitabine##Cisplatin##SAHA/Vorinostat,Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,82,388
+BRCA-TCGA-A2-A0EQ,Not Applicable,2053,146##586##146##167##796,84##229##84##167##679,Adriamycin##Herceptin##Cytoxan##Paclitaxel##AE-37,Chemotherapy##Targeted Molecular therapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,64,2053
+BRCA-TCGA-AR-A2LO,Not Applicable,633,84##84##175##161##903##Not Available,44##44##98##44##199##903,Adriamycin##Cytoxan##Paclitaxel##Bevacizumab##Tamoxifen##Anastrozole,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy##Hormone Therapy,Alive,46,633
+BRCA-TCGA-A2-A0ER,Not Applicable,1903,140##Not Available##154##140##615,98##183##154##98##327,Cytoxan##Arimidex##Docetaxel##Adriamycin##E-75,Chemotherapy##Hormone Therapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,63,1903
+BRCA-TCGA-LL-A9Q3,Not Applicable,224,531##216##Not Available,118##118##273,HERCEPTIN##TAXOL##ARIMIDEX,Immunotherapy##Chemotherapy##Hormone Therapy,Alive,69,224
+BRCA-TCGA-A2-A0EO,Not Applicable,2181,876##Not Available##361,158##876##244,Tamoxifen##Exemestane##E-75,Hormone Therapy##Hormone Therapy##Immunotherapy,Alive,54,2181
+BRCA-TCGA-S3-A6ZF,Not Applicable,212,170##429##170##170##278##Not Available,65##65##78##65##191##278,taxotere##Trastuzumab##Neulasta##Cytoxan##LETROZOLE##ANASTROZOLE,Chemotherapy##Immunotherapy##Ancillary##Chemotherapy##Hormone Therapy##Hormone Therapy,Alive,64,212
+BRCA-TCGA-A2-A25E,Not Applicable,2511,242##136##601##136##Not Available##2155##Not Available,158##67##250##67##2380##334##3055,Taxol##Adriamycin##Herceptin##Cytoxan##Goserelin##Tamoxifen##Anastrozole,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Hormone Therapy##Hormone Therapy##Hormone Therapy,Alive,34,2511
+BRCA-TCGA-LL-A6FR,Not Applicable,118,104##104##489##195,62##62##118##118,Adriamycin##CYTOXAN##HERCEPTIN##TAXOL,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy,Alive,50,118
+BRCA-TCGA-AC-A3TM,Not Applicable,93,213##213##213##Not Available,132##132##132##272,Cytoxan##Taxotere##Not Available##Arimidex,Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy,Alive,50,93
+BRCA-TCGA-BH-A0AZ,Not Applicable,867,209##209##293##482,126##126##209##126,Doxorubicin##Cytoxan##Taxol##Avastin,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,47,867
+BRCA-TCGA-AO-A03P,Not Applicable,2576,2822##2839##2331##2422##2881,2451##2422##1918##2332##2853,BEVACIZUMAB##CAPECITABINE##LETROZOLE (FEMARA)##EXEMESTANE (AROMASIN)##FULVESTRANT,Immunotherapy##Chemotherapy##Hormone Therapy##Hormone Therapy##Hormone Therapy,Alive,54,2576
+BRCA-TCGA-AR-A2LJ,Not Applicable,1359,84##84##175##465##Not Available,42##42##98##98##190,Adriamycin##Cytoxan##Paclitaxel##Trastuzumab##Tamoxifen,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy,Alive,40,1359
+BRCA-TCGA-AR-A254,Not Applicable,1212,43##99##173##170##170##22##184##344##Not Available,22##50##106##106##106##22##29##232##262,Paclitaxel##Abraxane##Fluorouracil##Epirubicin##Cytoxan##Trastuzumab##Trastuzumab##Trastuzumab##Tamoxifen,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Hormone Therapy,Alive,50,1212
+BRCA-TCGA-AR-A24U,Not Applicable,1623,97##97##188##111##476##476,55##55##111##111##118##118,Doxorubicin##Cytoxan##Paclitaxel##Trustuzumab##Trastuzumab##Trustuzumab,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,47,1623
+BRCA-TCGA-AQ-A7U7,Not Applicable,304,193##193##193##165##193##Not Available,123##123##123##123##123##296,Rituximab##Cyclophosphamide##Doxorubicin##Vincristine##Prednisone##Letrozole,Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Hormone Therapy##Hormone Therapy,Alive,55,304
+BRCA-TCGA-AR-A24Q,Not Applicable,2009,50##155##155##511##50##79##155##1988,36##79##87##180##36##79##86##208,Doxorubicin##Paclitaxel##Docetaxel##Trastuzumab##Cytoxan##Trastuzumab##Trastuzumab##Anastrozole,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Immunotherapy##Immunotherapy##Hormone Therapy,Alive,49,2009
+BRCA-TCGA-AR-A24V,Not Applicable,1648,95##95##151##178##1027##Not Available,53##53##109##109##193##1027,Doxorubicin##Cytoxan##Paclitaxel##Bevacizumab##Tamoxifen##Anastrozole,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy##Hormone Therapy,Alive,52,1648
+BRCA-TCGA-AR-A250,Not Applicable,1708,88##88##179##102##179##466##Not Available,45##45##102##102##109##193##194,Doxorubicin##Cytoxan##Paclitaxel##Trastuzumab##Trustuzumab##Trastuzumab##Anastrozole,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Hormone Therapy,Alive,58,1708
+BRCA-TCGA-AR-A0TQ,Not Applicable,1500,79##107##93##1864##226##226##79##482##1867,37##93##93##37##100##114##37##254##233,Doxorubicin##Paclitaxel##Trastuzumab##Triptorelin##Trastuzumab##Paclitaxel##Cytoxan##Trastuzumab##Exemestane,Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy##Immunotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy,Alive,27,1500
+BRCA-TCGA-AR-A255,Not Applicable,1059,54##419##Not Available,54##75##96,Trastuzumab##Trastuzumab##Anastrozole,Immunotherapy##Immunotherapy##Hormone Therapy,Alive,62,1059
+BRCA-TCGA-AR-A1AT,1272,1272,Not Available##1272##Not Available,Not Available##174##Not Available,Not otherwise specified##Anastrozole##Trastuzumab,Chemotherapy##Hormone Therapy##Immunotherapy,Dead,62,1272
+BRCA-TCGA-A2-A0CQ,Not Applicable,2393,Not Available##162##162##628,201##99##99##492,Arimidex##Adriamycin##Cytoxan##AE-37,Hormone Therapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,62,2393
+BRCA-TCGA-GM-A2DA,Not Applicable,5909,147##147##147##276##276##3131##3131##3415##4307##4435##4494##4494##4720##5015##5455##5678##5797##6028##6029##6213##6536##6422##6536,74##74##74##203##203##3061##3061##3141##3434##4347##4470##4470##4515##4721##5021##5455##5684##5797##5909##6051##6051##6372##6372,fluorouracil##Adriamycin##Cytoxan##Methotrexate##Vinblastine##Tamoxifen##Aromasin##Taxotere##Letrozole##Megace##Xeloda##Yondelis##Xeloda##Aromasin##Xeloda##Abraxane##Ixabepilone##Herceptin##Tamoxifen##Xeloda##Lapatinib##Navelbine##Herceptin,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Hormone Therapy##Hormone Therapy##Chemotherapy##Hormone Therapy##Hormone Therapy##Chemotherapy##Chemotherapy##Chemotherapy##Hormone Therapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,46,5909
+BRCA-TCGA-LL-A5YP,Not Applicable,99,92##92##457##Not Available,50##50##113##302,Cytoxan##Adriamycin##herceptin##arimidex,Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy,Alive,49,99
+BRCA-TCGA-AR-A1AX,Not Applicable,1103,Not Available##160##Not Available##482##295##Not Available,341##Not Available##54##117##249##54,Letrozole##Paclitaxel##Doxorubicin##Trastuzumab##Exemestane##Cytoxan,Hormone Therapy##Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy##Chemotherapy,Alive,64,1103
+COAD-TCGA-NH-A6GB,Not Applicable,170,212##212##576##576,49##49##49##49,oxaliplatin##Bevacizumab##leucovorin##fluorouracil,Chemotherapy##Immunotherapy##Ancillary##Chemotherapy,Alive,71,170
+COAD-TCGA-NH-A50U,334,334,189##189##266##266##253##113##Not Available,21##21##21##21##238##98##280,leucovorin calcium##oxaliplatin##bevacizumab##fluorouracil##avastin##capecitabine##regorafenib,Ancillary##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy,Dead,42,334
+COAD-TCGA-NH-A8F7,Not Applicable,158,228##228##249##Not Available##397,74##74##74##245##334,FLUOROURACIL##OXALIPLATIN##BEVACIZUMAB##XELODA##BEVACIZUMAB,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Immunotherapy,Alive,53,158
+COAD-TCGA-AY-A8YK,Not Applicable,209,286##146##111,69##69##83,5FU##Oxaliplatin##Bevacizumab,Chemotherapy##Chemotherapy##Immunotherapy,Alive,44,209
+COAD-TCGA-NH-A8F8,Not Applicable,167,476##181##469##Not Available##Not Available,49##49##76##292##323,fluorouracil##oxaliplatin##bevacizumab##bevacizumab##capecitabine,Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy##Chemotherapy,Alive,79,167
+COAD-TCGA-NH-A6GC,Not Applicable,40,Not Available##Not Available##Not Available,186##186##186,fluorouracil##oxaliplatin##bevacizumab,Chemotherapy##Chemotherapy##Immunotherapy,Alive,66,40
+DLBC-TCGA-GS-A9TT,Not Applicable,844,482##482##482##482##482##482,377##377##377##377##377##377,ciclofosfamida##prednisona##doxorubicina##vincristina##Rituximab##intrathecal methotrexate,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,70,844
+DLBC-TCGA-GS-A9TX,Not Applicable,887,54##54##54##54##54,12##12##12##12##12,doxorubicina##prednisona##ciclofosfamida##vincristina##Rituximab,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,37,887
+DLBC-TCGA-GS-A9U4,391,391,110##110##85##110##Not Available##85##85##85##110##85,106##106##22##106##Not Available##22##22##22##106##22,Rituximab##metilprednisona##vincristina##cisplatim##Not Available##Rituximab##ciclofosfamida##prednisona##etoposide##doxorubicina,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Dead,27,391
+DLBC-TCGA-GS-A9TQ,Not Applicable,576,129##129##129##129##129,24##24##24##24##24,Rituximab##ciclofosfamida##vincristina##doxorubicina##prednisona,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,69,576
+DLBC-TCGA-GS-A9TZ,Not Applicable,415,122##122##122##122##122,17##17##17##17##17,ciclofosfamida##doxorubicina##Rituximab##vincristina##prednisona,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,51,415
+DLBC-TCGA-GS-A9TV,Not Applicable,380,113##113##113##113##113,8##8##8##8##8,doxorubicina##vincristina##Rituximab##ciclofosfamida##prednisona,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,40,380
+DLBC-TCGA-GS-A9U3,Not Applicable,2717,142##142##142##142##142,28##28##28##28##28,vincristina##Rituximab##doxorubicina##ciclofosfamida##prednisona,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,77,2717
+DLBC-TCGA-GS-A9TU,Not Applicable,3414,155##155##155##155##155,0##0##0##0##0,ciclofosfamida##doxorubicina##Rituximab##prednisona##vincristina,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,45,3414
+DLBC-TCGA-GS-A9TY,Not Applicable,2829,Not Available##Not Available##Not Available##Not Available,28##28##28##28,ciclofosfamida##Rituximab##vincristina##prednisona,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,82,2829
+DLBC-TCGA-GS-A9TW,Not Applicable,1245,128##128##128##128##128,13##13##13##13##13,Rituximab##ciclofosfamida##prednisona##vincristina##doxorubicina,Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Immunotherapy,Alive,23,1245
+GBM-TCGA-08-0529,560,527,84##328##353,41##106##349,Temodar##Temodar##IL-13 Pseudomonas exotoxin,Chemotherapy##Chemotherapy##Immunotherapy,Dead,56,560
+GBM-TCGA-12-3648,819,784,784##452##452##731##784##731##67##784,738##83##126##508##738##508##14##738,Avastin##PEP3 KLH##Temodar##CPT 11##Vp 16##Avastin##Temodar##Temodar,Targeted Molecular therapy##Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Targeted Molecular therapy##Chemotherapy##Chemotherapy,Dead,61,819
+GBM-TCGA-12-0670,790,790,601##378##77##516##722##288##516##770##448##601##722##378##448##203##576##576##576##601##183##516##77,578##329##43##448##601##211##448##722##407##578##601##327##407##183##516##516##516##578##148##448##43,Tamoxifen##CPT-11##MAB I131##Tamoxifen##Tamoxifen##CCNU##Temozolomide##Celebrex##CPT-11##CCNU##Celebrex##Celebrex##Celebrex##Temozolomide##Tamoxifen##Celebrex##CCNU##Celebrex##Temozolomide##Celebrex##ch81c6,Hormone Therapy##Chemotherapy##Targeted Molecular therapy##Hormone Therapy##Hormone Therapy##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy##Immunotherapy##Chemotherapy##Hormone Therapy##Immunotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Immunotherapy##Targeted Molecular therapy,Dead,60,790
+GBM-TCGA-12-1094,372,346,215##336##213##336##67##269,104##286##141##286##18##231,ACT PEP3 KLH##Avastin##Temodor##Temodor##Temodor##CCNG,Immunotherapy##Targeted Molecular therapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,56,372
+GBM-TCGA-08-0390,425,322,69##132##69##132,28##105##28##105,Temodar##Temodar##Tarceva##Tarceva,Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy,Dead,69,425
+GBM-TCGA-12-1093,486,364,317##79##364##317##364,126##38##339##105##339,ATTAC##Temodor##Panzem##Temodor##Temozolamide,Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,66,486
+GBM-TCGA-08-0357,1143,1084,733##860##860##136##860##136##733##71##688##188##1112##985##1084##1084##688,689##736##736##93##736##93##689##29##471##184##1097##875##1007##1007##471,Gleevac##Interferon Alpha##CCNU##Thalidomide##Rapamycin##Temodar##Hyrdroxyurea##Temodar##Irinotecan##IL-13 Pseudomonas exotoxin##Cytoxan##VP-16##Sorafenib##Tarveca##Avastin,Targeted Molecular therapy##Immunotherapy##Chemotherapy##Targeted Molecular therapy##Targeted Molecular therapy##Chemotherapy##Chemotherapy##Chemotherapy##Targeted Molecular therapy##Immunotherapy##Targeted Molecular therapy##Chemotherapy##Targeted Molecular therapy##Targeted Molecular therapy##Targeted Molecular therapy,Dead,49,1143
+GBM-TCGA-76-6663,Not Applicable,235,175##Not Available,93##44,ICT-107##Temodar,Immunotherapy##Chemotherapy,Alive,44,235
+GBM-TCGA-06-0129,1024,989,238##120,183##14,IL-13PE##Temozolomide,Immunotherapy##Chemotherapy,Dead,30,1024
+GBM-TCGA-08-0522,635,555,555##511##65##271##225,517##423##22##268##72,Carboplatin##LY317615##Temodar##IL-13-PE38QQR Cytoxin##Temodar,Chemotherapy##Targeted Molecular therapy##Chemotherapy##Immunotherapy##Chemotherapy,Dead,61,635
+GBM-TCGA-08-0360,468,352,134,130,IL-13 with Pseudomonas exotoxin,Immunotherapy,Dead,76,468
+GBM-TCGA-12-3649,463,351,Not Available##350##240##Not Available##350##347##245##240,Not Available##240##186##Not Available##240##240##186##186,Temodar##Temodar##Avastin##Avastin##ATTAC##Avastin##ATTAC##Temodar,Chemotherapy##Chemotherapy##Targeted Molecular therapy##Targeted Molecular therapy##Immunotherapy##Targeted Molecular therapy##Immunotherapy##Chemotherapy,Dead,76,463
+GBM-TCGA-28-1751,Not Applicable,232,208##208##208##142,14##14##14##114,Temozolomide##Temozolomide##Temozolomide##Dendriticcell Vaccine,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,61,232
+GBM-TCGA-28-2506,Not Applicable,205,135##72##Not Available,107##27##177,Tumor Vaccine##Temodar##BIBW 2992,Immunotherapy##Chemotherapy##Targeted Molecular therapy,Alive,63,205
+GBM-TCGA-12-0829,626,626,599##473##571##571##473##599##64,572##115##474##474##95##572##16,CPT-11##ATTAC##Temador##Avastin##Temador##Avastin##Temador,Chemotherapy##Immunotherapy##Chemotherapy##Targeted Molecular therapy##Chemotherapy##Targeted Molecular therapy##Chemotherapy,Dead,75,626
+GBM-TCGA-12-0662,1161,1161,221##876##1070##604##1028##278##1070##844##600##473##334##417##1137##1135##1135##1090##1161,120##876##1041##600##889##224##1041##627##473##417##278##340##1133##1133##1133##1073##1113,CCNU##Gliadel Wafers##Cytoxan##Temodar##CPT-11##VP-16##VP-16##Temodar##Tamoxifen##VP-16##Tamoxiten##CCNU##Temodar##06GB##06GB##Thalidomide##Celbrex,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Hormone Therapy##Chemotherapy##Hormone Therapy##Chemotherapy##Chemotherapy##Targeted Molecular therapy##Targeted Molecular therapy##Immunotherapy##Immunotherapy,Dead,51,1161
+GBM-TCGA-28-1752,Not Applicable,258,272##272##132##272##272,11##11##105##11##11,Temozolomide##Temozolomide##Dendriticcell Vaccine##Temozolomide##Temozolomide,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy,Alive,42,258
+GBM-TCGA-08-0386,548,478,427##76##76##106##125,95##29##29##94##113,Temodar##Tarceva##Temodar##Tarceva##HSPPC-96 Vaccine,Chemotherapy##Targeted Molecular therapy##Chemotherapy##Targeted Molecular therapy##Immunotherapy,Dead,74,548
+GBM-TCGA-08-0358,678,594,264##264##548##293##467##75##75,91##91##491##288##341##33##33,Tarceva##Temodor##CCNU##IL-13 with Pseudomonas Exotoxin##HSPPC-96 Vaccine##Temodor##Tarceva,Targeted Molecular therapy##Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy##Chemotherapy##Targeted Molecular therapy,Dead,50,678
+GBM-TCGA-12-3653,442,357,371##224##315##371##224##87,316##128##287##316##128##46,Avastin##Daclizumab##Angiocept##VP 16##Temodar##Temodar,Targeted Molecular therapy##Immunotherapy##Targeted Molecular therapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,34,442
+HNSC-TCGA-CN-A6V1,Not Applicable,223,34,13,erbitux,Immunotherapy,Alive,59,223
+HNSC-TCGA-CN-4741,Not Applicable,876,163##1778,103##1771,CISPLATIN##erbitux,Chemotherapy##Immunotherapy,Alive,75,876
+HNSC-TCGA-CR-5248,Not Applicable,1663,84##84##179##179##1152##1152##1152##1208,42##42##137##137##1124##1124##1124##1194,Oxaliplatin##Alimta##Paclitaxel##Carboplatin##Bevacizumab##Docetaxel##Cisplatin##IMC-A12,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,53,1663
+HNSC-TCGA-KU-A6H8,Not Applicable,168,174##Not Available##Not Available,122##210##210,Cetuximab##Taxol##Carboplatin,Immunotherapy##Chemotherapy##Chemotherapy,Alive,41,168
+HNSC-TCGA-RS-A6TO,Not Applicable,272,41,41,Cetuximab,Immunotherapy,Alive,82,272
+KICH-TCGA-UW-A7GR,Not Applicable,930,288##288,22##22,Interferon##Sorafenib,Immunotherapy##Chemotherapy,Alive,44,930
+KICH-TCGA-KL-8323,1158,1158,Not Available##942,880##911,Lymphocyte Infusion##PTK-ZK,Immunotherapy##Targeted Molecular therapy,Dead,57,1158
+KIRC-TCGA-CW-5580,1964,1964,57,50,IFN-Alpha (Intron),Immunotherapy,Dead,73,1964
+KIRC-TCGA-BP-4169,701,701,253##78,127##36,Axitinib##Interferon,Targeted Molecular therapy##Immunotherapy,Dead,76,701
+KIRC-TCGA-CJ-4890,Not Applicable,2085,211##444##444##1636##1698##1483,70##263##263##1483##1636##480,Interferon##Sorafenib##Tipifarnib##Nexavar##Afinitor##Sutent,Immunotherapy##Targeted Molecular therapy##Targeted Molecular therapy##Targeted Molecular therapy##Targeted Molecular therapy##Targeted Molecular therapy,Alive,72,2085
+KIRC-TCGA-CJ-6028,1625,1625,903##903##1625##130##1033##392,392##392##1033##41##903##336,Gemcitabine##xeloda##Sorafenib##Oncophage##Sunitinib##Interferon,"Chemotherapy##Chemotherapy##Targeted Molecular therapy##Other, specify in notes##Targeted Molecular therapy##Immunotherapy",Dead,58,1625
+KIRC-TCGA-B8-4143,709,709,388,133,Interleukin-2,Immunotherapy,Dead,66,709
+KIRC-TCGA-BP-5201,Not Applicable,951,603,469,Interleukin-2,Immunotherapy,Alive,63,951
+KIRC-TCGA-CJ-4923,572,572,379,192,proleukin (IL-2),Immunotherapy,Dead,63,572
+KIRC-TCGA-CJ-4887,932,932,124,34,Oncophage,Immunotherapy,Dead,48,932
+KIRC-TCGA-B0-5701,Not Applicable,1276,727,366,Interleukin-2,Immunotherapy,Alive,65,1276
+KIRC-TCGA-CW-5591,Not Applicable,2271,Not Available,78,IL-2 (high dose),Immunotherapy,Alive,56,2271
+KIRC-TCGA-CJ-5677,782,782,70##70##378,42##42##70,interferon-alpha##Xeloda##gemcitabine,Immunotherapy##Chemotherapy##Chemotherapy,Dead,54,782
+KIRC-TCGA-BP-4770,329,329,Not Available,211,Interferon,Immunotherapy,Dead,73,329
+KIRC-TCGA-AK-3426,885,885,522,465,Interferon,Immunotherapy,Dead,37,885
+KIRC-TCGA-CJ-4641,1661,1661,321,37,Oncophage,Immunotherapy,Dead,55,1661
+KIRC-TCGA-CJ-4871,Not Applicable,2423,Not Available,98,Alpha Interferon,Immunotherapy,Alive,63,2423
+KIRC-TCGA-CJ-4894,841,841,240,188,Interferon,Immunotherapy,Dead,58,841
+KIRC-TCGA-BP-4335,475,475,134,42,Interferon,Immunotherapy,Dead,65,475
+KIRC-TCGA-CJ-5682,Not Applicable,1883,813,68,interferon alpha,Immunotherapy,Alive,60,1883
+KIRC-TCGA-B0-4841,204,204,108,47,INF,Immunotherapy,Dead,63,204
+KIRC-TCGA-CJ-6033,224,224,74##172##144##144##74,32##144##74##81##32,Xeloda##Interferon##Iressa##Avastin##Gemcitabine,Chemotherapy##Immunotherapy##Targeted Molecular therapy##Targeted Molecular therapy##Chemotherapy,Dead,54,224
+KIRC-TCGA-A3-3317,Not Applicable,1491,886##886,605##605,Sorafenib##Interferon Alpha,Targeted Molecular therapy##Immunotherapy,Alive,67,1491
+KIRC-TCGA-CJ-4868,646,646,89##365##534##282##365##288,56##296##379##135##296##114,Proleukin##Gemcitabine##Nexavar##Avastin##Capecitabin##Tarceva,Immunotherapy##Chemotherapy##Targeted Molecular therapy##Targeted Molecular therapy##Chemotherapy##Targeted Molecular therapy,Dead,42,646
+KIRC-TCGA-CJ-5681,552,552,235##135##318##365,165##105##235##305,gemcitabine##IL-2##avastin##RAD001,Chemotherapy##Immunotherapy##Targeted Molecular therapy##Targeted Molecular therapy,Dead,44,552
+KIRC-TCGA-CJ-4644,336,336,316##316##229##222##222,229##229##27##150##162,Tarceva##Avastin##Oncophage##Capecitabine##Intron A,"Targeted Molecular therapy##Targeted Molecular therapy##Other, specify in notes##Chemotherapy##Immunotherapy",Dead,48,336
+KIRC-TCGA-CJ-5680,768,768,247##616##186##629,220##275##53##466,IL-2##avastin##oncophage vaccine##Tarceva,Immunotherapy##Targeted Molecular therapy##Immunotherapy##Targeted Molecular therapy,Dead,65,768
+KIRC-TCGA-CJ-5679,679,679,274##599##547##344##344,116##547##344##274##274,interferon-alpha##thalidomide##avastin##gemcitabine##Xeloda,Immunotherapy##Chemotherapy##Targeted Molecular therapy##Chemotherapy##Chemotherapy,Dead,73,679
+KIRC-TCGA-B0-4837,1378,1378,Not Available,1217,Tyrosine kinase inhibitor,Immunotherapy,Dead,63,1378
+KIRC-TCGA-G6-A8L6,Not Applicable,305,Not Available##211##272,276##73##252,Avastin##Sutent##Axitnib,Immunotherapy##Chemotherapy##Chemotherapy,Alive,55,305
+KIRP-TCGA-G7-6789,122,122,74,60,intron a,Immunotherapy,Dead,53,122
+KIRP-TCGA-AL-3466,293,293,138,33,Interferon,Immunotherapy,Dead,41,293
+LGG-TCGA-E1-A7YO,2282,2282,23,23,I131-81C6,Immunotherapy,Dead,45,2282
+LGG-TCGA-DU-A7TD,228,228,63##151,22##77,Temozolomide##Temozolomide,Chemotherapy##Immunotherapy,Dead,52,228
+LGG-TCGA-E1-A7YL,492,492,78##289##263##249##336##325,36##103##103##103##298##298,Temodar##Avastin##Carboplatin##CPT-11##Avastin##VP-16,Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy,Dead,46,492
+LGG-TCGA-E1-A7Z2,398,398,213##270##328##334##383##369,102##230##286##293##356##356,Temodar##Temodar##Temodar##Avastin##Temodar##Avastin,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Immunotherapy,Dead,58,398
+LGG-TCGA-E1-A7Z6,984,984,705##964##966,356##907##901,Temodar##Temodar##Avastin,Chemotherapy##Chemotherapy##Immunotherapy,Dead,41,984
+LGG-TCGA-E1-A7YV,987,987,82##156##507##674##674##824##887##887##948##948,38##70##195##507##507##678##846##832##888##888,Temodar##Temodar##Avastin##Avastin##Gleevec##Gleevec##Avastin##Gleevec##Avastin##CPT-11,Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Immunotherapy##Chemotherapy,Dead,26,987
+LGG-TCGA-E1-A7YN,727,727,90##369##484##484##553##632,35##124##429##429##491##506,Temodar##Temodar##Avastin##Temodar##Avastin##CCNU,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Immunotherapy##Chemotherapy,Dead,63,727
+LGG-TCGA-E1-A7YM,648,648,75##137##137##174##164##497##593##593,27##90##90##137##137##174##501##501,Temodar##Avastin##CPT-11##Avastin##VP-16##Avastin##Avastin##Carboplatin,Chemotherapy##Immunotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Immunotherapy##Immunotherapy##Chemotherapy,Dead,63,648
+LGG-TCGA-E1-A7Z4,4412,4412,883##952##1100##1176##1176##1249##1834##1834##3888##4124##4137##4336##4308,883##896##974##1101##1101##1182##1266##1266##3545##4081##4081##4138##4138,Gliadel##Temodar##CCNU##Thalidomide##Cyclophosphamide##Karenitecin##Temodar##Tamoxifen##Avastin##Avastin##Temodar##Avastin##Carboplatin,Chemotherapy##Chemotherapy##Chemotherapy##Not Available##Chemotherapy##Chemotherapy##Chemotherapy##Hormone Therapy##Immunotherapy##Immunotherapy##Chemotherapy##Immunotherapy##Chemotherapy,Dead,35,4412
+LGG-TCGA-E1-A7YU,23,23,6,6,I 131 81C6,Immunotherapy,Dead,42,23
+LGG-TCGA-E1-A7YJ,592,592,84##144##504##518##541,39##96##96##96##537,Temodar##CPT-11##Avastin##Temodar##MR1-1,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Immunotherapy,Dead,55,592
+LGG-TCGA-E1-A7Z3,2235,2235,1709##1921##1921##1921##2072,1709##1911##1911##1911##1995,I131-81C6##CCNU##Procarbazine##Vincristine##CPT-11,Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,31,2235
+LGG-TCGA-E1-A7YY,4445,4445,1351##2470##2590##4152##4207##4418,982##2378##2465##3501##4152##4289,Temodar##Temodar##CCNU##Temodar##VP-16##Avastin,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Dead,27,4445
+LGG-TCGA-E1-A7YW,1120,1120,978##1025##1025##1095##608,711##999##999##1040##418,CCNU##Avastin##CPT-11##VP-16##Temodar,Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,28,1120
+LGG-TCGA-FG-A711,Not Applicable,1329,673##774##Not Available##1195##1277##1277##1329##1329,350##733##1097##1155##1223##1223##1284##1284,Temodar##Temodar##Avastin##CCNU##Hydroxyurea##Imatinib##Carboplatin 5 AUC##Etoposide,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Alive,33,1329
+LUAD-TCGA-73-A9RS,Not Applicable,305,186##186##186##242##284##Not Available,130##130##130##200##242##284,carboplatin##paclitaxel##bevacizumab##pemetrexed##docetaxel##gemcitabine,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Alive,41,305
+LUAD-TCGA-05-4424,Not Applicable,913,Not Available,699,Erlotinib,Immunotherapy,Alive,70,913
+LUAD-TCGA-05-5425,Not Applicable,90,761##761##669##Not Available,700##700##608##792,Paclitaxel##Carboplatin##Gefitinib##Erlotinib,Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy,Alive,68,90
+LUAD-TCGA-05-4402,244,244,91##91##122,30##30##122,Carboplatin##Vinorelbine##Erlotinib,Chemotherapy##Chemotherapy##Immunotherapy,Dead,57,244
+OV-TCGA-29-1769,Not Applicable,699,20##20##Not Available##150##150,20##20##206##42##42,Paciltaxel##Carboplatin##Abagovomab vs Placebo##Cisplatin##Paciltaxel,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy,Alive,40,699
+OV-TCGA-30-1859,1463,1463,199##199##593##199##1376##199##1379##199##1197##1103##1166##1131,31##31##369##31##1214##31##1334##31##1162##982##1135##1104,Adriamycin##Carboplatin##Trabectedin##Taxol##Taxol##Topotecan##Cytoxan##Gemcitabine##Doxil##Carboplatin##Armidex##Sargramostin,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Hormone Therapy##Immunotherapy,Dead,56,1463
+OV-TCGA-61-2097,Not Applicable,1844,Not Available##167##167,48##48##48,Interferon gamma##Taxol##Carboplatin,Immunotherapy##Chemotherapy##Chemotherapy,Alive,71,1844
+OV-TCGA-13-0793,Not Applicable,873,159##362##159,47##200##47,Paclitaxel##Abagovomab or Placebo##Carboplatin,Chemotherapy##Immunotherapy##Chemotherapy,Alive,40,873
+OV-TCGA-23-1110,Not Applicable,1658,110##375##110##235,6##333##6##179,Paclitaxel##Xeloda##Carboplatin##Ovarex/IND,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,42,1658
+OV-TCGA-30-1892,1484,1484,419##754##1258##Not Available##1384##1449##Not Available##132##132##573##1197##1197,253##601##1197##Not Available##1265##1428##862##10##10##428##1113##1134,Doxil##Carboplatin##Taxol##Topotecan##Carboplatin##Catumaxumab##Altima##Taxol##Carboplatin##Gemcitabine##Cytoxin##Avastin,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Dead,52,1484
+OV-TCGA-61-2101,1688,1688,221##Not Available##Not Available##Not Available##Not Available##Not Available##Not Available##117##221##Not Available##117##Not Available,152##1129##1159##733##1220##1103##1251##2##152##1190##2##733,Carboplatin##IL 12##Hexalen##Hexalin##Doxil##Doxil##VP 16##Taxol##Taxol##Gemzar##Cisplatin##Gemcitabine,Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,55,1688
+OV-TCGA-23-2084,1516,1516,701##1302##1485##1401##1359##1401##1425##1169##155##1425##155##701##1240,631##1261##1457##1381##1324##1381##1425##1127##6##1425##6##631##1183,Cisplatin##Taxotere##Etoposide (VP16)##Carboplatin##Topotecan##Ifosfamide##Cisplatin##Rhumab/Ind##Paclitaxel##Ifosfamide##Carboplatin##Gemzar##Doxil,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,45,1516
+OV-TCGA-04-1350,1946,1946,Not Available##Not Available##Not Available##Not Available##Not Available##Not Available##Not Available##Not Available##Not Available##Not Available##Not Available,1726##1389##1389##1389##1622##216##1726##216##363##720##1580,Fuluestrant##Avastin##Cisplatin##Gemcitibine##Aromasin##Carboplatin##Faslodex##Taxol##Cisplatin##Gemcitibine##Tamoxifen,Targeted Molecular therapy##Immunotherapy##Chemotherapy##Chemotherapy##Targeted Molecular therapy##Chemotherapy##Targeted Molecular therapy##Chemotherapy##Chemotherapy##Chemotherapy##Targeted Molecular therapy,Dead,46,1946
+OV-TCGA-04-1361,Not Applicable,989,844##844##989##989##844,53##53##936##936##53,Taxol##Taxol##Doxil##Avastin##Carboplatin,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy,Alive,57,989
+OV-TCGA-09-1666,Not Applicable,1752,480##173##1757##708##708##73##Not Available##73##1598##173##Not Available,256##101##1604##616##616##27##Not Available##27##1507##101##Not Available,Oca Rex Oregovomab##Carboplatin##Femara##Gemcitabine##Carboplatin##Carboplatin##Carboplatin##Taxol##Doxil##Taxotere##Taxotere,Immunotherapy##Chemotherapy##Hormone Therapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Alive,57,1752
+OV-TCGA-04-1648,871,871,Not Available##Not Available##Not Available##149##Not Available##149##149,247##247##247##3##247##3##3,Topotecan##Taxotere##Avastin##Carboplatin##Doxil##Gemcitibine##Taxol,Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,57,871
+OV-TCGA-61-2095,1875,1875,602##447##1264##602##1389##1188##Not Available,59##210##1193##59##1360##783##1474,Carboplatin##Ovarex MA6 B43.13##Topotecan##Taxol##Oxaliplatin##Doxil##Gemzar,Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,54,1875
+OV-TCGA-10-0926,788,788,Not Available##729##143##143,232##290##8##8,Interleukin-12##Doxil##Taxol##Carboplatin,Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy,Dead,63,788
+OV-TCGA-29-1771,Not Applicable,686,140##140##728##728##595##728,27##27##602##602##189##602,Paciltaxel##Carboplatin##Bevacizumab##Carboplatin##Abagovomag vs Placebo##Pacilatxel,Chemotherapy##Chemotherapy##Targeted Molecular therapy##Chemotherapy##Immunotherapy##Chemotherapy,Alive,76,686
+OV-TCGA-23-1117,1013,1013,294##757##863##624##928##993##928,22##712##781##459##890##951##890,Carboplatin##Cyclophosphamide##Cisplatin##Topotecan##Docetaxel##Gemcitabine##Herceptin,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Dead,42,1013
+OV-TCGA-61-2110,1354,1354,770##161##161##1239##930##1089##356##1354,661##20##20##1089##774##979##244##459,Topotecan##Taxol##Carboplatin##Gemzar##Carbplatin##Doxil##IL 2##Tamoxifen,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Hormone Therapy,Dead,56,1354
+READ-TCGA-DC-6156,Not Applicable,212,269##334##334##334##Not Available##Not Available##Not Available##Not Available##Not Available##761,87##92##92##92##365##395##365##365##365##395,Oxaliplatin##Fluorouracil##Leucovorin##Fluorouracil##Irinotecan HCL##bevacizumab##Fluorouracil##Fluorouracil##Leucovorin##BEVACIZUmab,"Chemotherapy##Chemotherapy##Other, specify in notes##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy",Alive,62,212
+SARC-TCGA-IE-A3OV,2448,2448,Not Available##Not Available##836##836##1594##1660##1918##2037##2093##2293,102##102##778##787##1411##1609##1834##1973##2073##2232,Dacarbazine (DTIC)##Adriamycin##Gemcitabine##Taxotere##ET-743##AP-23573 (ARIAD)##EZN-2968##Enoticumab##Threshold-302##Alimta,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Targeted Molecular therapy##Immunotherapy##Chemotherapy##Chemotherapy,Dead,42,2448
+SARC-TCGA-3B-A9I1,567,567,176##36##388##500,71##36##332##437,ADRIAMYCIN##DOCETAXEL##GEMCITABINE##Femara,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Dead,56,567
+SARC-TCGA-SI-A71O,Not Applicable,434,462##462##545,350##350##489,Avastin##Everolimus##Tivozanib,Immunotherapy##Chemotherapy##Chemotherapy,Alive,29,434
+SKCM-TCGA-D3-A2JC,Not Applicable,2126,415,54,Interferon alfa,Immunotherapy,Alive,53,2126
+SKCM-TCGA-GN-A4U4,Not Applicable,784,647##707,245##637,Axitinib##Ipilimumab,Chemotherapy##Immunotherapy,Alive,73,784
+SKCM-TCGA-EE-A2GS,Not Applicable,1691,1978##2075##Not Available##2354##Not Available,1596##1979##2127##2257##2372,Dabrafenib##Ipilimumab##Not Available##Not Available##Vemurafenib,Targeted Molecular therapy##Immunotherapy##Targeted Molecular therapy##Targeted Molecular therapy##Targeted Molecular therapy,Alive,28,1691
+SKCM-TCGA-FR-A7U8,Not Applicable,461,208,89,Interferon,Immunotherapy,Alive,50,461
+SKCM-TCGA-DA-A1I1,Not Applicable,4830,Not Available,6607,Pembrolizumab,Immunotherapy,Alive,55,4830
+SKCM-TCGA-EE-A29C,Not Applicable,1455,620##1502##1623##2413##2413,439##1114##1500##2262##2262,Paclitaxel##GSK Braf Inhibitor##Yervoy##Dabrafenib##Trametinib,Chemotherapy##Targeted Molecular therapy##Immunotherapy##Targeted Molecular therapy##Targeted Molecular therapy,Alive,20,1455
+SKCM-TCGA-FS-A1ZW,Not Applicable,1505,1005,700,interferon alpha,Immunotherapy,Alive,65,1505
+SKCM-TCGA-QB-AA9O,549,549,234,171,ipilimumab,Immunotherapy,Dead,73,549
+SKCM-TCGA-EE-A2ML,Not Applicable,6176,6156##6339##6440,5973##6279##6355,Dacarbazine##Fotemustine##MORAb-004,Chemotherapy##Chemotherapy##Immunotherapy,Alive,35,6176
+SKCM-TCGA-EB-A24C,Not Applicable,14,203##203##203##632##559##559##517,20##20##20##547##505##505##505,Dacarbazine##Laferon##Carboplatin##Temozolomide##Laferon##Dacarbazine##Cisplatin,Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy,Alive,56,14
+SKCM-TCGA-YG-AA3P,Not Applicable,439,Not Available,385,Yervoy,Immunotherapy,Alive,63,439
+SKCM-TCGA-W3-AA1V,1280,1280,1280,1005,Not Available,Immunotherapy,Dead,63,1280
+SKCM-TCGA-W3-A824,Not Applicable,6455,2710,1491,Not Available,Immunotherapy,Alive,63,6455
+SKCM-TCGA-FR-A8YD,Not Applicable,896,880,812,Ipilimumab,Immunotherapy,Alive,56,896
+SKCM-TCGA-DA-A3F2,Not Applicable,287,772,475,Ipilimumab,Immunotherapy,Alive,55,287
+SKCM-TCGA-D3-A2JP,Not Applicable,1372,193,73,Interferon Alpha,Immunotherapy,Alive,37,1372
+SKCM-TCGA-ER-A19N,1341,1341,Not Available,55,Interferon,Immunotherapy,Dead,47,1341
+SKCM-TCGA-D3-A1Q1,504,504,341##341##341,247##247##247,Cyclophosphamide##Not Available##Not Available,Chemotherapy##Immunotherapy##Vaccine,Dead,79,504
+SKCM-TCGA-FS-A4F0,Not Applicable,2367,1603##568##1521##1603,1543##82##1359##1543,Treosulfan##Interferon alpha##DTIC##Gemcitabine,Chemotherapy##Immunotherapy##Chemotherapy##Chemotherapy,Alive,67,2367
+SKCM-TCGA-XV-A9W5,Not Applicable,15,Not Available,264,interferon,Immunotherapy,Alive,51,15
+SKCM-TCGA-FR-A7U9,Not Applicable,213,178##Not Available,115##151,Talimogene Laherparepvec (T-VEC)##Ipilimumab,Vaccine##Immunotherapy,Alive,63,213
+SKCM-TCGA-W3-A828,3683,3683,2283,1887,Not Available,Immunotherapy,Dead,66,3683
+SKCM-TCGA-EB-A57M,Not Applicable,8,157##157##157##157##157##157##157##157,23##23##23##23##23##23##23##23,Cisplatin##Vinblastine##Zofran##Dexamethasone##Dacarbazine##Erythropoietin##Ciclosporin##RenAmin,Chemotherapy##Chemotherapy##Ancillary##Ancillary##Chemotherapy##Ancillary##Immunotherapy##Ancillary,Alive,56,8
+SKCM-TCGA-D3-A8GB,938,938,318,74,Interferon,Immunotherapy,Dead,48,938
+SKCM-TCGA-FS-A1ZT,Not Applicable,1617,1053,398,interferon alpha,Immunotherapy,Alive,55,1617
+SKCM-TCGA-XV-AB01,Not Applicable,19,Not Available,63,interferon,Immunotherapy,Alive,54,19
+SKCM-TCGA-GN-A4U9,Not Applicable,384,249##60##Not Available##579,165##60##384##523,Ipilimumab##melphalan##Imiquimod##Axitinib,Immunotherapy##Chemotherapy##Immunotherapy##Chemotherapy,Alive,71,384
+SKCM-TCGA-W3-AA1W,Not Applicable,6301,761##1765,335##1065,Interferon##Not Available,Immunotherapy##Immunotherapy,Alive,64,6301
+SKCM-TCGA-ER-A2NG,Not Applicable,951,766##Not Available##609,705##889##578,IL-2##VEMURAFENIB##Ipilimumab,Immunotherapy##Chemotherapy##Immunotherapy,Alive,43,951
+SKCM-TCGA-D3-A5GT,Not Applicable,179,Not Available,110,Interferon alpha,Immunotherapy,Alive,43,179
+SKCM-TCGA-W3-AA21,3195,3195,Not Available##Not Available##2100,3075##3075##1065,Taxol##Temodar##Not Available,Chemotherapy##Chemotherapy##Immunotherapy,Dead,26,3195
+SKCM-TCGA-D3-A1Q6,2184,2184,476,111,Interferon,Immunotherapy,Dead,55,2184
+SKCM-TCGA-W3-AA1R,3379,3379,2192##2863##3349##Not Available,792##1006##2526##3105,Not Available##Not Available##Not Available##IL2,Immunotherapy##Vaccine##Immunotherapy##Immunotherapy,Dead,71,3379
+SKCM-TCGA-ER-A2NF,Not Applicable,498,136##502##Not Available,120##471##471,Ipilimumab##IL-2##Aflibercept,Immunotherapy##Immunotherapy##Chemotherapy,Alive,53,498
+SKCM-TCGA-ER-A1A1,Not Applicable,2433,418,84,Interferon,Immunotherapy,Alive,58,2433
+SKCM-TCGA-EE-A3JI,Not Applicable,4504,4571##Not Available,4529##4608,Dacarbazine##Ipilimumab,Chemotherapy##Immunotherapy,Alive,48,4504
+SKCM-TCGA-FW-A3TV,Not Applicable,5,58##Not Available,33##151,Interferon##Interferon,Immunotherapy##Immunotherapy,Alive,57,5
+SKCM-TCGA-D9-A148,Not Applicable,4511,4496,4426,ipilimumab,Immunotherapy,Alive,40,4511
+SKCM-TCGA-D3-A3C7,Not Applicable,1007,488,123,Interferon,Immunotherapy,Alive,57,1007
+SKCM-TCGA-WE-AAA0,Not Applicable,918,917##Not Available,856##1166,ipilimumab##pembrolizumab,Immunotherapy##Immunotherapy,Alive,47,918
+SKCM-TCGA-ER-A19M,1857,1857,1093,1019,Interferon,Immunotherapy,Dead,36,1857
+SKCM-TCGA-EB-A5SH,Not Applicable,1065,1125##1125##1217,1091##1091##1154,Dacarbazine##Cisplatin##Interferon alpha,Chemotherapy##Chemotherapy##Immunotherapy,Alive,60,1065
+SKCM-TCGA-FS-A1ZS,Not Applicable,4526,2790,2566,interferon alpha,Immunotherapy,Alive,54,4526
+SKCM-TCGA-GF-A3OT,Not Applicable,301,216##216##216##249,95##95##95##249,Carboplatin##Taxol##Avastin##Yervoy,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,58,301
+SKCM-TCGA-D3-A3MV,Not Applicable,653,639,572,Interleukin-2,Immunotherapy,Alive,38,653
+SKCM-TCGA-WE-AAA4,Not Applicable,461,360##527##Not Available##Not Available,360##517##535##739,melphalan##vemurafenib##Dabrafenib##ipilimumab,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,56,461
+SKCM-TCGA-D3-A2JN,Not Applicable,1709,123,92,Interferon-alfa,Immunotherapy,Alive,46,1709
+SKCM-TCGA-WE-A8ZM,Not Applicable,2746,Not Available,2946,Diphencyprone,Immunotherapy,Alive,70,2746
+SKCM-TCGA-D3-A2JH,Not Applicable,952,321,291,Interferon,Immunotherapy,Alive,68,952
+SKCM-TCGA-GN-A8LN,Not Applicable,420,464##Not Available##Not Available##Not Available,464##603##603##772,ipilimumab##carboplatin##paclitaxel##Pembrolizumab,Immunotherapy##Not Available##Chemotherapy##Immunotherapy,Alive,68,420
+SKCM-TCGA-GN-A4U8,Not Applicable,1410,Not Available,1186,Sylatron,Immunotherapy,Alive,51,1410
+SKCM-TCGA-D3-A8GN,Not Applicable,4529,1639,1224,Not Available,Immunotherapy,Alive,27,4529
+SKCM-TCGA-HR-A2OH,2004,2004,471##1753##1848,108##1729##1830,Interferon##Dacarbazine##Interleukin - 2,Immunotherapy##Chemotherapy##Immunotherapy,Dead,46,2004
+SKCM-TCGA-GN-A264,3587,3587,3111,2752,Interferon alfa-2b,Immunotherapy,Dead,60,3587
+SKCM-TCGA-EB-A24D,Not Applicable,42,41##645##582##645,38##38##567##525,Cisplatin##Dacarbazine##Temodal##Alferon,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,72,42
+SKCM-TCGA-GN-A4U5,Not Applicable,707,435,211,Interferon,Immunotherapy,Alive,61,707
+SKCM-TCGA-FR-A729,Not Applicable,6390,Not Available,6253,Sylatron,Immunotherapy,Alive,38,6390
+SKCM-TCGA-FR-A44A,Not Applicable,4886,3134,2769,Interferon,Immunotherapy,Alive,29,4886
+SKCM-TCGA-YG-AA3O,Not Applicable,1096,Not Available##1006,1081##977,Yervoy##Interferon,Immunotherapy##Immunotherapy,Alive,62,1096
+SKCM-TCGA-FR-A69P,Not Applicable,149,Not Available,107,Ipilimumab,Immunotherapy,Alive,34,149
+SKCM-TCGA-FR-A3YN,Not Applicable,2449,2387,2324,Ipilimumab,Immunotherapy,Alive,44,2449
+SKCM-TCGA-GN-A4U3,Not Applicable,3288,2574,2299,Interleukin-2,Immunotherapy,Alive,30,3288
+SKCM-TCGA-W3-AA1Q,2101,2101,Not Available##Not Available##Not Available##Not Available##Not Available##Not Available,1735##1735##1492##1735##1735##913,Tamoxifen##Herceptin##Interferon##Not Available##Gemcitabine##Not Available,Hormone Therapy##Targeted Molecular therapy##Immunotherapy##Immunotherapy##Chemotherapy##Vaccine,Dead,57,2101
+SKCM-TCGA-EB-A5KH,Not Applicable,543,615##615##615##615,557##557##557##557,Cisplatin##Vinblastine##Dacarbazine##Leukine,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,55,543
+SKCM-TCGA-ER-A19Q,1548,1548,1337##1428,1274##1394,IL-18##Dacarbazine,Immunotherapy##Chemotherapy,Dead,37,1548
+SKCM-TCGA-DA-A3F5,Not Applicable,6076,6869##6814,6830##6660,Vemurafenib##Pembrolizumab,Targeted Molecular therapy##Immunotherapy,Alive,45,6076
+SKCM-TCGA-ER-A195,1078,1078,911,562,interferon,Immunotherapy,Dead,46,1078
+SKCM-TCGA-FW-A3R5,Not Applicable,697,993,714,Interferon,Immunotherapy,Alive,68,697
+SKCM-TCGA-W3-A825,1917,1917,1767##1767##1767##1767##1767##1767,1644##1644##1644##1644##1644##1644,Cisplatin##Vinblastine##Dacarbazine##Tamoxifen##Interleukin-2##Interferon-α2,Chemotherapy##Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy##Immunotherapy,Dead,60,1917
+THYM-TCGA-4X-A9FD,Not Applicable,1200,Not Available,92,azaTHIOprine,Immunotherapy,Alive,34,1200
+THYM-TCGA-4X-A9FA,Not Applicable,17,Not Available,2,azaTHIOprine,Immunotherapy,Alive,71,17
+UCS-TCGA-N6-A4VG,Not Applicable,1209,166##166##649##649,62##61##530##530,Carboplatin##Paclitaxel##Taxol##Avastin,Chemotherapy##Chemotherapy##Chemotherapy##Immunotherapy,Alive,77,1209

@@ -1,0 +1,22 @@
+B_CELL_ACTIVATION
+> Genes annotated by the GO term GO:0042113. The change in morphology and behavior of a mature or immature B cell resulting from exposure to a mitogen, cytokine, chemokine, cellular ligand, or an antigen for which it is specific.
+CD40LG
+CD79A
+CEBPG
+HDAC4
+HDAC5
+HDAC7
+HDAC9
+IL4
+IL7
+INHA
+INHBA
+LAT2
+LAX1
+NFAM1
+NHEJ1
+PTPRC
+SLA2
+TGFB1
+TNFSF13
+TPD52
